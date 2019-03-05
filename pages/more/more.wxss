@@ -1,0 +1,5 @@
+/* pages/more/more.wxss */
+image{
+  width:750rpx;
+  height:1040rpx;
+}

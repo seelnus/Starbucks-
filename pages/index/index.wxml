@@ -1,0 +1,88 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="header-font">心情惬意,来杯咖啡吧  ☕</text> 
+  </view>
+  <!--服务器轮播图-->
+  <!-- <view class="slider">
+    <swiper autoplay indicator-dots indicator-active-color='#fff'>
+      <swiper-item wx:for="{{list}}" wx:key="index">
+        <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+  </view> -->
+  <!--本地轮播图-->
+  <view class="slider">
+    <swiper autoplay indicator-dots indicator-active-color='#fff'>
+      <swiper-item>
+        <image src="/pages/img/banner1.png" lazy-load mode="aspectFill"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/pages/img/banner2.png" lazy-load mode="aspectFill"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/pages/img/banner3.png" lazy-load mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!--优惠券-->
+  <view class="content">
+      <view class="quan">
+          <view class="quan-item">
+              <view class="money">10</view>
+              <view class="text">优惠券</view>
+              <view class="condition">满100使用</view>
+              <view class="get-btn" bindtap="getTicket">领取</view>
+          </view>
+          <view class="quan-item">
+              <view class="money">20</view>
+              <view class="text">优惠券</view>
+              <view class="condition">满180使用</view>
+              <view class="get-btn" bindtap="getTicket">领取</view>
+          </view>
+          <view class="quan-item">
+              <view class="money">30</view>
+              <view class="text">优惠券</view>
+              <view class="condition">满240使用</view>
+              <view class="get-btn" bindtap="getTicket">领取</view>
+          </view>
+
+          <view class="quan-item">
+              <view class="money">30</view>
+              <view class="text">优惠券</view>
+              <view class="condition">满240使用</view>
+              <view class="get-btn" bindtap="getTicket">领取</view>
+          </view>
+          <toast hidden="{{status}}" duration="1000" bindchange="getTicketHide">
+            成功领取
+          </toast>
+      </view>
+    </view>
+    <!--活动-->
+    <view class="event">
+      <view class="event-list">
+        <image src="/pages/img/event01.png"></image>
+      </view>
+      <view class="event-list">
+        <image src="/pages/img/event02.png"></image>
+      </view>
+      <view class="event-list">
+        <image src="/pages/img/event03.png"></image>
+      </view>
+    </view>
+    <!--星享俱乐部-->
+    <view class="club">
+      <view class="club-1">
+        <text>星享俱乐部</text>
+      </view>
+      <view class="club-2">
+        <text>开启您的星享之旅,星星越多,好礼越丰富</text>
+      </view>
+      <view class="club-3">
+        <text class="club-3">了解更多></text>
+      </view>
+      <view class="club-logo">
+        <image src="/pages/img/logo-new.png"></image>
+      </view>
+    </view>
+</view>

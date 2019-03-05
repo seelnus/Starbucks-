@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/more/more",
+    "pages/menu/menu",
+    "pages/account/account",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#158447",
+    "navigationBarTitleText": "星巴克用星说",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#00A862",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/pages/img/icon-home.png",
+        "selectedIconPath": "/pages/img/icon-home-active.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "iconPath": "/pages/img/icon-account.png",
+        "selectedIconPath": "/pages/img/icon-account-active.png",
+        "text": "我的账户"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "iconPath": "/pages/img/icon-menu.png",
+        "selectedIconPath": "/pages/img/icon-menu-active.png",
+        "text": "菜单"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "iconPath": "/pages/img/icon-more.png",
+        "selectedIconPath": "/pages/img/icon-more-active.png",
+        "text": "更多"
+      }
+    ]
+  }
+}
